@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+    margin: 20px;
+    padding: 0;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-size: 1rem;
+    background-color: #bdffff;
+    color: black;
+}
+
+h1 {
+    font-size: 2.125rem;
+}
+
+h2 {
+    font-size: 1.875rem;
+    text-align: left;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+nav ul {
+    list-style: none;
+    text-align: right;
+}
+
+nav li {
+    display: inline-block;
+    margin: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover, .active {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+#feedback-form {
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+}
+
+#search-form {
+    background-color: blueviolet;
+}
+
+.search-label {
+    width: 40px;
+    height: 40px;
+    background-image: url('search.png');
+    text-indent: -9999px;
+  }
+
+input[type="handicap"], 
+input[type="tool"], 
+input[type="app"] {
+    background-color: white;
+    border: none;
+    height: 0.05em;
+    margin: 0;
+    outline: 0;
+    padding: 10px;
+    width: 10em;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-size: 1rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 6px 10px 0;
+  transform: scale(1.2); 
+}
+
+input[type="radio"]:hover,
+input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
+textarea {
+    background-color: white;
+    border: none;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 10px;
+    width: 80%;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-size: 1rem;
+}
+
+button {
+    width: 200px;
+    height: 40px;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 25px;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-size: 1rem;
+    background: white;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    margin: 20px;
+  }
+  
+  button:hover {
+    box-shadow:  4px 4px 6px 0 rgba(255, 255, 255,.5),
+                -4px -4px 6px 0 rgba(255, 255, 255, .5);
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+footer {
+    text-align: center;    
+}
