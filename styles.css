@@ -2,16 +2,22 @@
 /* CSS Document */
 
 body {
-    margin: 20px;
+    margin: 1%;
     padding: 0;
     font-family: "Atkinson Hyperlegible", sans-serif;
     font-size: 1rem;
-    background-color: #bdffff;
-    color: black;
+    background-color: #1C1C1C;
+    color: white;
+}
+
+#icon-pic {
+    width: 4%;
+    float: left;
 }
 
 h1 {
-    font-size: 2.125rem;
+    font-size: 2.5rem;
+    text-align: center;
 }
 
 h2 {
@@ -27,34 +33,177 @@ h4 {
     font-size: 1.25rem;
 }
 
+#main-nav {
+    background-color: #1C1C1C;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
 nav ul {
+    margin-top: 10px;
     list-style: none;
     text-align: right;
 }
 
 nav li {
     display: inline-block;
-    margin: 20px;
+    margin: 10px 20px 10px 20px;
+    font-size: 1.25rem;
 }
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: white;
+    padding: 24px 24px;
 }
 
 nav a:hover, .active {
     text-decoration: underline;
-    font-weight: 700;
+    text-decoration-thickness: 0.5rem;
+    text-decoration-color: #B6CEDD;
+}
+
+nav a:focus {
+    outline: 0.5rem solid #B6CEDD;
+    border-radius: 0.5rem;
+  }
+
+#hero-picture {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem; 
+  }
+
+#hero-pic {
+    width: 80%;
+    border-radius: 2rem;
+    box-shadow:  4px 4px 6px 0 rgba(0, 0, 0, 0.3),
+                -4px -4px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+.text-link {
+    text-decoration: none;
+    color: white;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+}
+
+.text-link:focus {
+    outline: 0.25rem solid #B6CEDD;
+    border-radius: 0.25rem;
 }
 
 .underline {
     text-decoration: underline;
 }
 
+/* .hidden {
+    display: none;
+  } */
+
 #feedback-form {
-    margin: 20px;
-    border: 3px solid black;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #1C1C1C;
+    color: #1C1C1C;
+    border-radius: 10px;
 }
+
+  button:hover {
+    box-shadow:  4px 4px 6px 0 rgba(0, 0, 0, 0.5),
+                -4px -4px 6px 0 rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .accordion {
+    text-align: left;
+  }
+
+  .collapsible {
+    background-color : inherit;
+    color: white;
+    border : #1C1C1C solid 1px;
+    border-radius: 0.5rem;
+    text-align : center;
+    cursor : pointer;
+    width: 100%;
+    height: 5rem;
+    margin-bottom: 1%;
+  }
+
+  .collapsible:hover {
+    outline: 0.5rem solid #B6CEDD;
+    border-radius: 0.5rem;
+    color:white;
+    box-shadow:  4px 4px 6px 0 rgba(0, 0, 0, 0.5),
+                -4px -4px 6px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .collapsible:focus {
+    outline: 0.5rem solid #B6CEDD;
+    border-radius: 0.5rem;
+  }
+
+  .collapsible.active {
+    outline: 0.5rem solid #B6CEDD;
+    border-radius: 0.5rem;
+    color: white;
+  }
+
+  .chevron { 
+    display: inline-block; 
+    border-right: 4px solid white; 
+    border-bottom: 4px solid white;
+    border-radius: 0.1em;
+    width: 15px; 
+    height: 15px; 
+    margin-left: 10px;
+    transform: rotate(45deg); 
+    animation: none;
+} 
+
+.chevron:hover {
+    border-right: 4px solid white; 
+    border-bottom: 4px solid white;
+}
+
+.active .chevron  {
+    transform: rotate(-135deg);
+    animation: none;
+    border-right: 4px solid white; 
+    border-bottom: 4px solid white;
+}
+
+.content {
+    padding : 0 10px;
+    max-height : 0;
+    overflow : hidden;
+    transition : max-height 0.2s ease-out;
+    background-color : inherit;
+}
+
+.index-chart {
+    width: 80%;
+    height: 80%;
+    padding: 1rem;
+}
+
+.app-chart {
+    width: 100%;
+    height: 80%;
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 700px) {
+    .index-chart {
+      width: 90%;
+      height: 80%;
+    }
+  }
 
 footer {
     text-align: center;    

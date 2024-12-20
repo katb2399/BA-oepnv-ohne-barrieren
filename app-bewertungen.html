@@ -1,125 +1,758 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <title>ÖPNV-Apps im Vergleich der Barrierefreiheit</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
         <nav id="main-nav">
+            <img id="icon-pic" src="images/icon.png"
+                alt="Ein Icon bestehend aus einem Kreis, wo in der Mitte ein Mensch ist." />
             <ul>
                 <li><a href="index.html">Startseite</a></li>
-                <li><a class="active" href="app-bewertungen.html">Bewertungen</a></li>
+                <li><a class="active" href="app-bewertungen.html">App-Bewertungen</a></li>
                 <li><a href="feedback.html">Feedback geben</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-                </ul>	
+                <li><a href="kontakt.html">Über Uns</a></li>
+            </ul>
         </nav>
-        <h1>Bewertungen der ÖPNV-Apps</h1>
     </header>
     <main>
-        <nav id="apps-nav">
-            <li><a href="#bvg">BVG Apps</a></li>
-            <li><a href="#db-navigator">DB Navigator</a></li>
-            <li><a href="#fahrplaner">Fahrplaner</a></li>
-            <li><a href="#hvv">hvv/hvv switch</a></li>
-            <li><a href="#kvb">KVB-App</a></li>
-            <li><a href="#nah-sh">NAH SH</a></li>
-            <li><a href="#vbb">VBB Bus&Bahn</a></li>
-        </nav>
-      
+        <div id="hero-picture">
+            <img id="hero-pic" src="images/hero_bewertungen.jpg"
+                alt="Eine Person auf Brusthöhe die das Handy in der Hand hat. Ebenfalls zu sehen sind Sternebewertungen von einem Stern bis 5 Sterne mit passenden Smileys. Der 5-Sterne Smiley ist besonders hervorgehoben." />
+        </div>
+        <h1>Bewertungen der ÖPNV-Apps</h1>
+        <p>
+            Herzlich willkommen auf der Bewertungsseite! Hier finden Sie die Bewertungen von Menschen mit Behinderungen
+            zu verschiedenen ÖPNV-Apps.
+            Sie können nachlesen, wie gut die Apps in Bezug auf Barrierefreiheit und Benutzerfreundlichkeit abschneiden.
+            Diese Bewertungen sollen Ihnen dabei helfen, die passende App für Ihre Bedürfnisse auszuwählen.
+            So erhalten Sie einen transparenten Überblick darüber, welche Apps den öffentlichen Nahverkehr besonders
+            zugänglich machen.
+            Um Informationen und Bewertungen zu einer der untenstehenden Apps zu lesen, einfach auf die Überschrift oder
+            den Chevronpfeil klicken.
+        </p>
 
-        <section id="#bvg">
-            <h2>BVG Fahrinfo, BVG Tickets, BVG Jelbi</h2>
-            <p><span class="underline">Herausgeber:</span> Berliner Verkehrsbetriebe (BVG)</p>
-            <p><span class="underline">Geltungsbereich:</span> Berlin und Berliner Umland </p>
-            <p><span class="underline">Beschreibung:</span><br>
-            In der <b>BVG Fahrinfo</b> App bekommen Nutzer:innen Auskunft über alle Haltstellen und Fahrpläne. Es kann ein Ziel eingegeben werden und dem Nutzenden wird die passende Route und das entsprechende Ticket angezeigt.<br>
-            Die <b>BVG Tickets</b> App bietet verschiedene Tickets verschiedener Art an. Nutzer:innen können diese kaufen und dann den ÖPNV nutzen.<br>
-            <b>BVG Jelbi</b> ist eine Mobilitäts-App mit der Nutzende ÖPNV und Sharing-Angebote in Berlin nutzen können. Die Angebote können über die App gebucht und bezahlt werden.
-            </p>
-            <p><span class="underline">Bewertungen</span> &#8594;</p>
-            <!--<img id="my-pic" src="Medien/me-foto.JPG" width="200" height="250" alt="Quadrat">-->
-        </section>
+        <!--Beginn des Akkordeon Inhaltes-->
+        <section class="accordion">
+            <button type="button" class="collapsible">
+                <h2>BVG Fahrinfo
+                    <div class="chevron"></div>
+                </h2>
+            </button>
 
-        <section id="#db-navigator">
-            <h2>DB Navigator</h2>
-            <p><span class="underline">Herausgeber:</span> Deutsche Bahn AG</p>
-            <p><span class="underline">Geltungsbereich:</span> Deutschlandweit (?) </p>
-            <p><span class="underline">Beschreibung:</span><br>
-            In der <b>DB Navigator</b> App können digitale Fahrkarten gekauft und verwaltet werden. 
-            Außerdem bietet die App eine Fahrplanauskunft, Echtzeitinformationen -und benachrichtigungen und einen Zugriff auf die Kundenkarte "BahnCard". 
-            Zuletzt gibt es in der App das Kundenbindungsprogramm "BahnBonus" und eine CheckIn-Funktion für den Fahrtantritt.
-            </p>
-            <p><span class="underline">Bewertungen</span></p>
-            <!--<img id="my-pic" src="Medien/me-foto.JPG" width="200" height="250" alt="Quadrat">-->
-        </section>
+            <div class="content">
+                <p><span class="underline">Herausgeber:</span> Berliner Verkehrsbetriebe (BVG)</p>
+                <p><span class="underline">Geltungsbereich:</span> Berlin und Berliner Umland </p>
+                <p><span class="underline">Beschreibung:</span><br>
+                    In der <strong>BVG Fahrinfo</strong> App bekommen Nutzer:innen Auskunft über alle Haltstellen und
+                    Fahrpläne.
+                    Es kann ein Ziel eingegeben werden und dem Nutzenden wird die passende Route und das entsprechende
+                    Ticket angezeigt.<br>
+                </p>
+                <p><span class="underline">Durchschnittliche Bewertung der Nutzerfreundlichkeit und
+                        Barrierefreiheit:</span> 3,27 von 5 Sternen</p>
+                <p><span class="underline">Detaillierte Bewertungen:</span></p>
+                <div class="app-chart">
+                    <canvas id="bvg"
+                        aria-label="Horizontales Balkendigramm, welches detaillierte Bewertungen zur Barrierefreiheit und Nutzerfreundlichkeit der App BVG Fahrinfo visualisiert"
+                        role="img"></canvas>
+                </div>
 
-        <section id="#fahrplaner">
-            <h2>Fahrplaner</h2>
-            <p><span class="underline">Herausgeber:</span> Verkehrsverbund Bremen/Niedersachsen</p>
-            <p><span class="underline">Geltungsbereich:</span> Bremen und Niedersachen</p>
-            <p><span class="underline">Beschreibung:</span><br>
-            
-            </p>
-            <p><span class="underline">Bewertungen</span></p>
-            <!--<img id="my-pic" src="Medien/me-foto.JPG" width="200" height="250" alt="Quadrat">-->
-        </section>
-   
-        <section id="#hvv">
-            <h2>hvv/hvv switch</h2>
-            <p><span class="underline">Herausgeber:</span> hochbahn </p>
-            <p><span class="underline">Geltungsbereich:</span> Hamburg und Hamburger Umland </p>
-            <p><span class="underline">Beschreibung:</span><br>
-            
-            </p>
-            <p><span class="underline">Bewertungen</span></p>
-            <!--<img id="my-pic" src="Medien/me-foto.JPG" width="200" height="250" alt="Quadrat">-->
-        </section>
+            </div>
 
-        <section id="#kvb">
-            <h2>KVB-App</h2>
-            <p><span class="underline">Herausgeber:</span> Berliner Verkehrsbetriebe (BVG)</p>
-            <p><span class="underline">Geltungsbereich:</span> Berlin und Berliner Umland </p>
-            <p><span class="underline">Beschreibung:</span><br>
-            
-            </p>
-            <p><span class="underline">Bewertungen</span></p>
-            <!--<img id="my-pic" src="Medien/me-foto.JPG" width="200" height="250" alt="Quadrat">-->
-        </section>
-   
-        <section id="#nah-sh">
-            <h2>NAH SH</h2>
-            <p><span class="underline">Herausgeber:</span> Berliner Verkehrsbetriebe (BVG)</p>
-            <p><span class="underline">Geltungsbereich:</span> Berlin und Berliner Umland </p>
-            <p><span class="underline">Beschreibung:</span><br>
-            
-            </p>
-            <p><span class="underline">Bewertungen</span></p>
-            <!--<img id="my-pic" src="Medien/me-foto.JPG" width="200" height="250" alt="Quadrat">-->
-        </section>
+            <button type="button" class="collapsible">
+                <h2>DB Navigator
+                    <div class="chevron"></div>
+                </h2>
+            </button>
+            <div class="content">
+                <p><span class="underline">Herausgeber:</span> Deutsche Bahn AG</p>
+                <p><span class="underline">Geltungsbereich:</span> Deutschlandweit (?) </p>
+                <p><span class="underline">Beschreibung:</span><br>
+                    In der <strong>DB Navigator</strong> App können digitale Fahrkarten gekauft und verwaltet werden.
+                    Außerdem bietet die App eine Fahrplanauskunft, Echtzeitinformationen -und benachrichtigungen und
+                    einen Zugriff auf die Kundenkarte "BahnCard".
+                    Zuletzt gibt es in der App das Kundenbindungsprogramm "BahnBonus" und eine CheckIn-Funktion für den
+                    Fahrtantritt.
+                </p>
+                <p><span class="underline">Durchschnittliche Bewertung der Nutzerfreundlichkeit und
+                        Barrierefreiheit:</span> 3,71 von 5 Sternen</p>
+                <p><span class="underline">Detaillierte Bewertungen:</span></p>
+                <div class="app-chart">
+                    <canvas id="db"
+                        aria-label="Horizontales Balkendigramm, welches detaillierte Bewertungen zur Barrierefreiheit und Nutzerfreundlichkeit der App DB Navigator visualisiert"
+                        role="img"></canvas>
+                </div>
+            </div>
 
-        <section id="#vbb">
-            <h2>VBB Bus&Bahn</h2>
-            <p><span class="underline">Herausgeber:</span> Berliner Verkehrsbetriebe (BVG)</p>
-            <p><span class="underline">Geltungsbereich:</span> Berlin und Berliner Umland </p>
-            <p><span class="underline">Beschreibung:</span><br>
-            
-            </p>
-            <p><span class="underline">Bewertungen</span></p>
-            <!--<img id="my-pic" src="Medien/me-foto.JPG" width="200" height="250" alt="Quadrat">-->
+            <button type="button" class="collapsible">
+                <h2>Fahrplaner
+                    <div class="chevron"></div>
+                </h2>
+            </button>
+            <div class="content">
+                <p><span class="underline">Herausgeber:</span> Verkehrsverbund Bremen/Niedersachsen</p>
+                <p><span class="underline">Geltungsbereich:</span> Bremen und Niedersachen</p>
+                <p><span class="underline">Beschreibung:</span><br></p>
+                <p><span class="underline">Durchschnittliche Bewertung der Nutzerfreundlichkeit und
+                        Barrierefreiheit:</span> 3,44 von 5 Sternen</p>
+                <p><span class="underline">Detaillierte Bewertungen:</span></p>
+                <div class="app-chart">
+                    <canvas id="fahrplaner"
+                        aria-label="Horizontales Balkendigramm, welches detaillierte Bewertungen zur Barrierefreiheit und Nutzerfreundlichkeit der App Fahrplaner visualisiert"
+                        role="img"></canvas>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible">
+                <h2>hvv App
+                    <div class="chevron"></div>
+                </h2>
+            </button>
+            <div class="content">
+                <p><span class="underline">Herausgeber:</span> hochbahn </p>
+                <p><span class="underline">Geltungsbereich:</span> Hamburg und Hamburger Umland </p>
+                <p><span class="underline">Beschreibung:</span><br></p>
+                <p><span class="underline">Durchschnittliche Bewertung der Nutzerfreundlichkeit und
+                        Barrierefreiheit:</span> 3,23 von 5 Sternen</p>
+                <p><span class="underline">Detaillierte Bewertungen:</span></p>
+                <div class="app-chart">
+                    <canvas id="hvv"
+                        aria-label="Horizontales Balkendigramm, welches detaillierte Bewertungen zur Barrierefreiheit und Nutzerfreundlichkeit der App hvv App visualisiert"
+                        role="img"></canvas>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible">
+                <h2>mobil.nrw
+                    <div class="chevron"></div>
+                </h2>
+            </button>
+            <div class="content">
+                <p><span class="underline">Herausgeber:</span> Berliner Verkehrsbetriebe (BVG)</p>
+                <p><span class="underline">Geltungsbereich:</span> Berlin und Berliner Umland </p>
+                <p><span class="underline">Beschreibung:</span><br></p>
+                <p><span class="underline">Durchschnittliche Bewertung der Nutzerfreundlichkeit und
+                        Barrierefreiheit:</span> 2,18 von 5 Sternen</p>
+                <p><span class="underline">Detaillierte Bewertungen:</span></p>
+                <div class="app-chart">
+                    <canvas id="mobilnrw"
+                        aria-label="Horizontales Balkendigramm, welches detaillierte Bewertungen zur Barrierefreiheit und Nutzerfreundlichkeit der App mobil Punkt nrw visualisiert"
+                        role="img"></canvas>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible">
+                <h2>NAH SH
+                    <div class="chevron"></div>
+                </h2>
+            </button>
+            <div class="content">
+                <p><span class="underline">Herausgeber:</span> Berliner Verkehrsbetriebe (BVG)</p>
+                <p><span class="underline">Geltungsbereich:</span> Berlin und Berliner Umland </p>
+                <p><span class="underline">Beschreibung:</span><br></p>
+                <p><span class="underline">Durchschnittliche Bewertung der Nutzerfreundlichkeit und
+                        Barrierefreiheit:</span> 4 von 5 Sternen</p>
+                <p><span class="underline">Detaillierte Bewertungen:</span></p>
+                <div class="app-chart">
+                    <canvas id="nahsh"
+                        aria-label="Horizontales Balkendigramm, welches detaillierte Bewertungen zur Barrierefreiheit und Nutzerfreundlichkeit der App NAH SH visualisiert"
+                        role="img"></canvas>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible">
+                <h2>Öffi - Fahrplanauskunft
+                    <div class="chevron"></div>
+                </h2>
+            </button>
+            <div class="content">
+                <p><span class="underline">Herausgeber:</span> Berliner Verkehrsbetriebe (BVG)</p>
+                <p><span class="underline">Geltungsbereich:</span> Berlin und Berliner Umland </p>
+                <p><span class="underline">Beschreibung:</span><br></p>
+                <p><span class="underline">Durchschnittliche Bewertung der Nutzerfreundlichkeit und
+                        Barrierefreiheit:</span> 3,76 von 5 Sternen</p>
+                <p><span class="underline">Detaillierte Bewertungen:</span></p>
+                <div class="app-chart">
+                    <canvas id="oeffi"
+                        aria-label="Horizontales Balkendigramm, welches detaillierte Bewertungen zur Barrierefreiheit und Nutzerfreundlichkeit der App Öffi Fahrplanauskunft visualisiert"
+                        role="img"></canvas>
+                </div>
+            </div>
         </section>
-   
     </main>
- 
-   
+    <footer>
+        <p>©2025 Katharina Bente <br>Alle Rechte vorbehalten</p>
+    </footer>
 
-      <footer>
-  			<p>©2024 Katharina Bente <br>Alle Rechte vorbehalten</p>
-		</footer>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!--Java Script für BVG Bewertungen horizontales Balkendiagramm-->
+    <script>
+        const ctx1 = document.getElementById('bvg');
+
+        new Chart(ctx1, {
+            type: 'bar',
+            data: {
+                labels: ['Insgesamte Zufriedenheit', 'Beurteilung der Barrierefreiheit', 'Nutzung der Funktionen', 'Informationen in der App finden', 'Nutzung ohne Hindernisse', 'Aufbau der Appnavigation', 'Bedienung der App', 'Finden von Funktionen', 'Lesbarkeit von Schriftgrößen und Kontrasten', 'Funktionalität mit Bedienungshilfen', 'Würde eine andere App nutzen'],
+                datasets: [{
+                    data: [4, 3, 3, 3, 1, 4, 5, 5, 4, 3, 5],
+                    backgroundColor: [
+                        'rgb(168, 230, 163)',
+                        'rgb(248, 197, 160)',
+                        'rgb(198, 167, 210)',
+                        'rgb(188, 206, 217)',
+                        'rgb(184, 173, 160)',
+                        'rgb(217, 199, 199)',
+                        'rgb(248, 232, 160)',
+                        'rgb(163, 204, 120)',
+                        'rgb(108, 84, 142)',
+                        'rgb(244, 164, 136)',
+                        'rgb(184, 140, 148)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                devicePixelRatio: 3,
+                responsive: true,
+                // This chart will not respond to mousemove, etc
+                //events: ['click'],
+                indexAxis: 'y',
+                scales: {
+                    y: {
+                        ticks: {
+                            color: "white",
+                            beginAtZero: true,
+                            font: {
+                                family: "'Atkinson Hyperlegible', sans-serif",
+                                size: 16
+                            }
+                        },
+                    },
+                    x: {
+                        min: 0,
+                        max: 5,
+                        ticks: {
+                            color: "white",
+                            beginAtZero: true,
+                            font: {
+                                family: "'Atkinson Hyperlegible', sans-serif",
+                                size: 16
+                            }
+                        },
+                    },
+                },
+                hover: {
+                    mode: 'nearest', // show tooltip for the nearest data point
+                    intersect: false // do not require the mouse to intersect the data point
+                },
+                tooltips: {
+                    mode: 'nearest', // show tooltip for the nearest data point
+                    intersect: false, // do not require the mouse to intersect the data point
+                    callbacks: {
+                        label: function (tooltipItem, data) {
+                            return data.datasets[tooltipItem.datasetIndex].label + ': ' + tooltipItem.yLabel + '%'; // customize tooltip label
+                        }
+                    }
+                },
+                focus: {
+                    mode: 'nearest', // enable keyboard navigation for the nearest data point
+                    intersect: false // do not require the keyboard to intersect the data point
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    datalabels: {
+                        display: true,
+                        formatter: function (value, context) {
+                            return value + '%'; // add labels to bars
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function (context) {
+                                const value = context.raw;  // Der Datenwert
+                                return `Bewertung ${value} von 5 Sternen`;  // Benutzerdefinierter Text + Wert
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+
+
+    <!--Java Script für DB Bewertungen horizontales Balkendiagramm-->
+    <script>
+        const ctx2 = document.getElementById('db');
+
+        new Chart(ctx2, {
+            type: 'bar',
+            data: {
+                labels: ['Insgesamte Zufriedenheit', 'Beurteilung der Barrierefreiheit', 'Nutzung der Funktionen', 'Informationen in der App finden', 'Nutzung ohne Hindernisse', 'Aufbau der Appnavigation', 'Bedienung der App', 'Finden von Funktionen', 'Lesbarkeit von Schriftgrößen und Kontrasten', 'Funktionalität mit Bedienungshilfen', 'Würde eine andere App nutzen'],
+                datasets: [{
+                    data: [3.53, 3.47, 3.82, 3.47, 4.18, 3.94, 4.06, 3.94, 3.41, 3.59, 3.35],
+                    backgroundColor: [
+                        'rgb(168, 230, 163)',
+                        'rgb(248, 197, 160)',
+                        'rgb(198, 167, 210)',
+                        'rgb(188, 206, 217)',
+                        'rgb(184, 173, 160)',
+                        'rgb(217, 199, 199)',
+                        'rgb(248, 232, 160)',
+                        'rgb(163, 204, 120)',
+                        'rgb(108, 84, 142)',
+                        'rgb(244, 164, 136)',
+                        'rgb(184, 140, 148)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                // This chart will not respond to mousemove, etc
+                events: ['click'],
+                indexAxis: 'y',
+                scales: {
+                    y: {
+                        ticks: {
+                            color: "white",
+                            beginAtZero: true,
+                            font: {
+                                family: "'Atkinson Hyperlegible', sans-serif",
+                                size: 16
+                            }
+                        },
+                    },
+                    x: {
+                        min: 0,
+                        max: 5,
+                        ticks: {
+                            color: "white",
+                            beginAtZero: true,
+                            font: {
+                                family: "'Atkinson Hyperlegible', sans-serif",
+                                size: 16
+                            }
+                        },
+                    },
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function (context) {
+                                const value = context.raw;  // Der Datenwert
+                                return `Bewertung ${value} von 5 Sternen`;  // Benutzerdefinierter Text + Wert
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+    <!--Java Script für Fahrplaner Bewertungen horizontales Balkendiagramm-->
+    <script>
+        const ctx3 = document.getElementById('fahrplaner');
+
+        new Chart(ctx3, {
+            type: 'bar',
+            data: {
+                labels: ['Insgesamte Zufriedenheit', 'Beurteilung der Barrierefreiheit', 'Nutzung der Funktionen', 'Informationen in der App finden', 'Nutzung ohne Hindernisse', 'Aufbau der Appnavigation', 'Bedienung der App', 'Finden von Funktionen', 'Lesbarkeit von Schriftgrößen und Kontrasten', 'Funktionalität mit Bedienungshilfen', 'Würde eine andere App nutzen'],
+                datasets: [{
+                    data: [3.33, 3.67, 4.17, 3, 4.33, 3.33, 3.67, 3, 3.5, 2.83, 3],
+                    backgroundColor: [
+                        'rgb(168, 230, 163)',
+                        'rgb(248, 197, 160)',
+                        'rgb(198, 167, 210)',
+                        'rgb(188, 206, 217)',
+                        'rgb(184, 173, 160)',
+                        'rgb(217, 199, 199)',
+                        'rgb(248, 232, 160)',
+                        'rgb(163, 204, 120)',
+                        'rgb(108, 84, 142)',
+                        'rgb(244, 164, 136)',
+                        'rgb(184, 140, 148)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                // This chart will not respond to mousemove, etc
+                events: ['click'],
+                indexAxis: 'y',
+                scales: {
+                    y: {
+                        ticks: {
+                            color: "white",
+                            beginAtZero: true,
+                            font: {
+                                family: "'Atkinson Hyperlegible', sans-serif",
+                                size: 16
+                            }
+                        },
+                    },
+                    x: {
+                        min: 0,
+                        max: 5,
+                        ticks: {
+                            color: "white",
+                            beginAtZero: true,
+                            font: {
+                                family: "'Atkinson Hyperlegible', sans-serif",
+                                size: 16
+                            }
+                        },
+                    },
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function (context) {
+                                const value = context.raw;  // Der Datenwert
+                                return `Bewertung ${value} von 5 Sternen`;  // Benutzerdefinierter Text + Wert
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+    <!--Java Script für hvv Bewertungen horizontales Balkendiagramm-->
+    <script>
+        const ctx4 = document.getElementById('hvv');
+
+        new Chart(ctx4, {
+            type: 'bar',
+            data: {
+                labels: ['Insgesamte Zufriedenheit', 'Beurteilung der Barrierefreiheit', 'Nutzung der Funktionen', 'Informationen in der App finden', 'Nutzung ohne Hindernisse', 'Aufbau der Appnavigation', 'Bedienung der App', 'Finden von Funktionen', 'Lesbarkeit von Schriftgrößen und Kontrasten', 'Funktionalität mit Bedienungshilfen', 'Würde eine andere App nutzen'],
+                datasets: [{
+                    data: [3, 3, 3, 3, 3, 3, 5, 5, 3.5, 2, 1],
+                    backgroundColor: [
+                        'rgb(168, 230, 163)',
+                        'rgb(248, 197, 160)',
+                        'rgb(198, 167, 210)',
+                        'rgb(188, 206, 217)',
+                        'rgb(184, 173, 160)',
+                        'rgb(217, 199, 199)',
+                        'rgb(248, 232, 160)',
+                        'rgb(163, 204, 120)',
+                        'rgb(108, 84, 142)',
+                        'rgb(244, 164, 136)',
+                        'rgb(184, 140, 148)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                // This chart will not respond to mousemove, etc
+                events: ['click'],
+                indexAxis: 'y',
+                scales: {
+                    y: {
+                        ticks: {
+                            color: "white",
+                            beginAtZero: true,
+                            font: {
+                                family: "'Atkinson Hyperlegible', sans-serif",
+                                size: 16
+                            }
+                        },
+                    },
+                    x: {
+                        min: 0,
+                        max: 5,
+                        ticks: {
+                            color: "white",
+                            beginAtZero: true,
+                            font: {
+                                family: "'Atkinson Hyperlegible', sans-serif",
+                                size: 16
+                            }
+                        },
+                    },
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function (context) {
+                                const value = context.raw;  // Der Datenwert
+                                return `Bewertung ${value} von 5 Sternen`;  // Benutzerdefinierter Text + Wert
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+    <!--Java Script für mobilnrw Bewertungen horizontales Balkendiagramm-->
+    <script>
+        const ctx5 = document.getElementById('mobilnrw');
+
+        new Chart(ctx5, {
+            type: 'bar',
+            data: {
+                labels: ['Insgesamte Zufriedenheit', 'Beurteilung der Barrierefreiheit', 'Nutzung der Funktionen', 'Informationen in der App finden', 'Nutzung ohne Hindernisse', 'Aufbau der Appnavigation', 'Bedienung der App', 'Finden von Funktionen', 'Lesbarkeit von Schriftgrößen und Kontrasten', 'Funktionalität mit Bedienungshilfen', 'Würde eine andere App nutzen'],
+                datasets: [{
+                    data: [1, 1, 2, 2, 3, 2, 1, 1, 5, 5, 1],
+                    backgroundColor: [
+                        'rgb(168, 230, 163)',
+                        'rgb(248, 197, 160)',
+                        'rgb(198, 167, 210)',
+                        'rgb(188, 206, 217)',
+                        'rgb(184, 173, 160)',
+                        'rgb(217, 199, 199)',
+                        'rgb(248, 232, 160)',
+                        'rgb(163, 204, 120)',
+                        'rgb(108, 84, 142)',
+                        'rgb(244, 164, 136)',
+                        'rgb(184, 140, 148)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                // This chart will not respond to mousemove, etc
+                events: ['click'],
+                indexAxis: 'y',
+                scales: {
+                    y: {
+                        ticks: {
+                            color: "white",
+                            beginAtZero: true,
+                            font: {
+                                family: "'Atkinson Hyperlegible', sans-serif",
+                                size: 16
+                            }
+                        },
+                    },
+                    x: {
+                        min: 0,
+                        max: 5,
+                        ticks: {
+                            color: "white",
+                            beginAtZero: true,
+                            font: {
+                                family: "'Atkinson Hyperlegible', sans-serif",
+                                size: 16
+                            }
+                        },
+                    },
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function (context) {
+                                const value = context.raw;  // Der Datenwert
+                                return `Bewertung ${value} von 5 Sternen`;  // Benutzerdefinierter Text + Wert
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+    <!--Java Script für NAH SH Bewertungen horizontales Balkendiagramm-->
+    <script>
+        const ctx6 = document.getElementById('nahsh');
+
+        new Chart(ctx6, {
+            type: 'bar',
+            data: {
+                labels: ['Insgesamte Zufriedenheit', 'Beurteilung der Barrierefreiheit', 'Nutzung der Funktionen', 'Informationen in der App finden', 'Nutzung ohne Hindernisse', 'Aufbau der Appnavigation', 'Bedienung der App', 'Finden von Funktionen', 'Lesbarkeit von Schriftgrößen und Kontrasten', 'Funktionalität mit Bedienungshilfen', 'Würde eine andere App nutzen'],
+                datasets: [{
+                    data: [3, 4, 4, 4, 5, 4, 5, 5, 4, 1, 5],
+                    backgroundColor: [
+                        'rgb(168, 230, 163)',
+                        'rgb(248, 197, 160)',
+                        'rgb(198, 167, 210)',
+                        'rgb(188, 206, 217)',
+                        'rgb(184, 173, 160)',
+                        'rgb(217, 199, 199)',
+                        'rgb(248, 232, 160)',
+                        'rgb(163, 204, 120)',
+                        'rgb(108, 84, 142)',
+                        'rgb(244, 164, 136)',
+                        'rgb(184, 140, 148)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                // This chart will not respond to mousemove, etc
+                events: ['click'],
+                indexAxis: 'y',
+                scales: {
+                    y: {
+                        ticks: {
+                            color: "white",
+                            beginAtZero: true,
+                            font: {
+                                family: "'Atkinson Hyperlegible', sans-serif",
+                                size: 16
+                            }
+                        },
+                    },
+                    x: {
+                        min: 0,
+                        max: 5,
+                        ticks: {
+                            color: "white",
+                            beginAtZero: true,
+                            font: {
+                                family: "'Atkinson Hyperlegible', sans-serif",
+                                size: 16
+                            }
+                        },
+                    },
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function (context) {
+                                const value = context.raw;  // Der Datenwert
+                                return `Bewertung ${value} von 5 Sternen`;  // Benutzerdefinierter Text + Wert
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+    <!--Java Script für Öffi Bewertungen horizontales Balkendiagramm-->
+    <script>
+        const ctx7 = document.getElementById('oeffi');
+
+        new Chart(ctx7, {
+            type: 'bar',
+            data: {
+                labels: ['Insgesamte Zufriedenheit', 'Beurteilung der Barrierefreiheit', 'Nutzung der Funktionen', 'Informationen in der App finden', 'Nutzung ohne Hindernisse', 'Aufbau der Appnavigation', 'Bedienung der App', 'Finden von Funktionen', 'Lesbarkeit von Schriftgrößen und Kontrasten', 'Funktionalität mit Bedienungshilfen', 'Würde eine andere App nutzen'],
+                datasets: [{
+                    data: [4, 3.67, 4, 4.33, 3, 4, 3, 3, 3, 4.33, 5],
+                    backgroundColor: [
+                        'rgb(168, 230, 163)',
+                        'rgb(248, 197, 160)',
+                        'rgb(198, 167, 210)',
+                        'rgb(188, 206, 217)',
+                        'rgb(184, 173, 160)',
+                        'rgb(217, 199, 199)',
+                        'rgb(248, 232, 160)',
+                        'rgb(163, 204, 120)',
+                        'rgb(108, 84, 142)',
+                        'rgb(244, 164, 136)',
+                        'rgb(184, 140, 148)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                // This chart will not respond to mousemove, etc
+                events: ['click'],
+                indexAxis: 'y',
+                scales: {
+                    y: {
+                        ticks: {
+                            color: "white",
+                            beginAtZero: true,
+                            font: {
+                                family: "'Atkinson Hyperlegible', sans-serif",
+                                size: 16
+                            }
+                        },
+                    },
+                    x: {
+                        min: 0,
+                        max: 5,
+                        ticks: {
+                            color: "white",
+                            beginAtZero: true,
+                            font: {
+                                family: "'Atkinson Hyperlegible', sans-serif",
+                                size: 16
+                            }
+                        },
+                    },
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function (context) {
+                                const value = context.raw;  // Der Datenwert
+                                return `Bewertung ${value} von 5 Sternen`;  // Benutzerdefinierter Text + Wert
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+    <script>
+        const accordionLabel = document.querySelectorAll(".collapsible");
+
+        accordionLabel.forEach(item => {
+            item.addEventListener("click", () => {
+
+                // Automatisches schließen von dem derzeit geöffneten Akkordeon-Item, wenn ein weiteres Akkordeon-Item geöffnet wird
+                const currentlyActive = document.querySelector(".collapsible.active");
+                if (currentlyActive && currentlyActive !== item) {
+                    currentlyActive.classList.remove("active");
+                    currentlyActive.nextElementSibling.style.maxHeight = null;
+                }
+
+                // Klickt man auf den Button wird der Inhalt angezeigt
+                item.classList.toggle("active");
+                const content = item.nextElementSibling;
+                if (item.classList.contains("active")) {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                } else {
+                    content.style.maxHeight = null;
+                }
+            });
+        });
+    </script>
+
+</body>
+
 </html>

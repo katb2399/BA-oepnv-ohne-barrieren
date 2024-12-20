@@ -1,81 +1,311 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <title>ÖPNV-Apps im Vergleich der Barrierefreiheit</title>
-  </head>
-  <body>
-    <header>
-        <nav id="main-nav">
-            <ul>
-                <li><a class="active" href="index.html">Startseite</a></li>
-                <li><a href="app-bewertungen.html">Bewertungen</a></li>
-                <li><a href="feedback.html">Feedback geben</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-                </ul>	
-        </nav>
-        <h1>ÖPNV ohne Barrieren (AT)</h1>
-    </header>
-    <main>
-      <h2>Willkommen auf dieser Seite!</h2>
-      <p>
-        Diese Webseite hat das Ziel, die Barrierefreiheit von ÖPNV-Apps in deutschen Städten zu untersuchen und zu verbessern. <br>
-        Wichtig: Diese Webseite ist noch in Arbeit, da sie als Teil einer Bachelorarbeit entstanden ist. Es handelt sich um keine fertiggestellte Webseite und ist sozusagen ein "Work in progress". <br>
-        Wir möchten herausfinden, wie gut diese Apps auf die Bedürfnisse von Menschen mit verschiedenen Behinderungen eingehen und welche Schwierigkeiten oder positiven Erfahrungen Nutzende im Alltag machen. 
-        Mit dem Barrierefreiheitsstärkungsgesetz (kurz: BFSG), welches ab dem 28. Juni 2025 in Kraft tritt, werden diese Aspekte noch wichtiger. 
-        Durch die gesammelten Daten und Bewertungen möchten wir App-Entwicklern und ÖPNV-Anbietern konkrete Hinweise geben, wie sie ihre Angebote inklusiver gestalten können.
-      </p>
 
-      <h2>Was können Sie auf dieser Webseite machen?</h2>
-      <p>
-        Auf unserer Webseite können Sie sich einen Überblick über die Barrierefreiheit verschiedener ÖPNV-Apps verschaffen. 
-        Dafür werden die Erfahrungen von Menschen mit Behinderungen gesammelt, die Apps wie z.B. die Fahrplaner App, hvv App oder DB Navigator App auf Ihre Benutzerfreundlichkeit und Barrierefreiheit bewerten.
-        Im Fokus der Bewertungen liegen die Funktionen: Fahrtauskunft, Buchungsprozess von Tickets, Echtzeitinofmrationen zu Fahrten und der Appseitigen Navigation zu Haltestellen. 
-        Die Bewertungen finden Sie auf der Seite <a href="app-bewertungen.html"><b>Bewertungen</b></a> . 
-        Falls Sie selber eine Bewertung zu einer App abgeben möchten, finden sie die Online Umfrage auf der Seite <a href="feedback.html"><b>Feedback geben</b></a> . Danke im Voraus für Ihr Feedback und Ihre Mühe.
-        Falls Sie Fragen oder Feedback zu der Seite haben, können Sie dies gerne über die E-Mail "lalalal" machen.
-      </p>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    type="text/css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-      <h2>Barrierefreiheit der Webseite</h2>
-      <p>
-        Bei der Erstellung und Konzeption dieser Webseite wurde sehr stark darauf geachtet, dass sie barrierefrei ist.
-        Die Inhalte sind so gestaltet, dass sie für Menschen mit verschiedenen Beeinträchtigungen zugänglich sind. 
-        Die Webseite unterstützt Screenreader, bietet anpassbare Schriftgrößen und Kontraste und ist vollständig per Tastatur navigierbar. 
-        Wenn Sie auf Probleme stoßen oder Verbesserungsvorschläge haben, kontaktieren Sie mich bitte, damit wir diese Seite kontinuierlich verbessert werden kann.
-        Das Ziel ist es, eine inklusive Plattform für alle Nutzenden zu schaffen.</p>
-   
-      <!-- <form id="search-form">
-        <label class="search-label" for="search">
-            Search
-        </label>
-        <input id="search" type="text" placeholder="Search about recipes">
-        <input class="button" type="button" value="Search">
-      </form> -->
-   
+  <title>ÖPNV-Apps im Vergleich der Barrierefreiheit</title>
+</head>
 
-   
-    </main>
- 
-    <!-- <p>Auf dieser Seite soll noch folgendes integriert werden:</p>
-      <ol>
-        <li>Suchleiste</li>
-        <li>Slider (?) mit spannenden Kommentaren aus Usertest</li>
-        <li>Ein oder zwei Diagramme, die folgende Infos haben können:
-          <ul>
-            <li>Auffällige Zahlen und Fakten, z.B. Prozentsatz der Nutzer, die Schwierigkeiten mit bestimmten Funktionen haben.</li>
-            <li>Gesamtbewertung von Barrierefreiheit aller Apps im Vergleich?</li>
-          </ul>
-        </li>
-        <li>Optional: Übersichtskarte mit Pins, wo bewertete Apps geografisch liegen</li>
-      </ol> -->
+<body>
+  <header>
+    <nav id="main-nav">
+      <img id="icon-pic" src="images/icon.png"
+        alt="Ein Icon bestehend aus einem Kreis, wo in der Mitte ein Mensch ist." />
+      <ul>
+        <li><a class="active" href="index.html">Startseite</a></li>
+        <li><a href="app-bewertungen.html">App-Bewertungen</a></li>
+        <li><a href="feedback.html">Feedback geben</a></li>
+        <li><a href="kontakt.html">Über Uns</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div id="hero-picture">
+      <img id="hero-pic" src="images/hero_index.jpg" alt="Das Interieur und ein Stoppbutton in einem Bus." />
+    </div>
+    <h1>ÖPNV ohne Barrieren</h1>
+    <h2>Willkommen auf dieser Seite!</h2>
+    <p>
+      Diese Webseite hat das Ziel, die Barrierefreiheit von ÖPNV-Apps in deutschen Städten zu untersuchen und zu
+      verbessern. <br>
+      Wichtig: Diese Webseite ist noch in Arbeit, da sie als Teil einer Bachelorarbeit entstanden ist. Es handelt sich
+      um keine fertiggestellte Webseite und ist sozusagen ein "Work in progress". <br>
+      Wir möchten herausfinden, wie gut diese Apps auf die Bedürfnisse von Menschen mit verschiedenen Behinderungen
+      eingehen und welche Schwierigkeiten oder positiven Erfahrungen Nutzende im Alltag machen.
+      Mit dem Barrierefreiheitsstärkungsgesetz (kurz: BFSG), welches ab dem 28. Juni 2025 in Kraft tritt, werden diese
+      Aspekte noch wichtiger.
+      Durch die gesammelten Daten und Bewertungen möchten wir App-Entwicklern und ÖPNV-Anbietern konkrete Hinweise
+      geben, wie sie ihre Angebote inklusiver gestalten können.
+    </p>
 
-      <footer>
-  			<p>©2024 Katharina Bente <br>Alle Rechte vorbehalten</p>
-		</footer>
-  </body>
+    <h2>Was können Sie auf dieser Webseite machen?</h2>
+    <p>
+      Auf unserer Webseite können Sie sich einen Überblick über die Barrierefreiheit verschiedener ÖPNV-Apps
+      verschaffen.
+      Dafür werden die Erfahrungen von Menschen mit Behinderungen gesammelt, die Apps wie z.B. die Fahrplaner App, hvv
+      App oder DB Navigator App auf Ihre Benutzerfreundlichkeit und Barrierefreiheit bewerten.
+      Im Fokus der Bewertungen liegen die Funktionen: Fahrtauskunft, Buchungsprozess von Tickets, Echtzeitinofmrationen
+      zu Fahrten und der Appseitigen Navigation zu Haltestellen.
+      Die Bewertungen finden Sie auf der Seite <a class="text-link" href="app-bewertungen.html"><strong>Bewertungen</strong></a> .
+      Falls Sie selber eine Bewertung zu einer App abgeben möchten, finden sie die Online Umfrage auf der Seite <a class="text-link" href="feedback.html"><strong>Feedback geben</strong></a> . 
+      Danke im Voraus für Ihr Feedback und Ihre Mühe.
+      Falls Sie Fragen oder Feedback zu der Seite haben, können Sie dies gerne über die E-Mail "lalalal" machen.
+    </p>
+
+    <h2>Barrierefreiheit der Webseite</h2>
+    <p>
+      Bei der Erstellung und Konzeption dieser Webseite wurde sehr stark darauf geachtet, dass sie barrierefrei ist.
+      Die Inhalte sind so gestaltet, dass sie für Menschen mit verschiedenen Beeinträchtigungen zugänglich sind.
+      Die Webseite unterstützt Screenreader, bietet anpassbare Schriftgrößen und Kontraste und ist vollständig per
+      Tastatur navigierbar.
+      Wenn Sie auf Probleme stoßen oder Verbesserungsvorschläge haben, kontaktieren Sie mich bitte, damit wir diese
+      Seite kontinuierlich verbessert werden kann.
+      Das Ziel ist es, eine inklusive Plattform für alle Nutzenden zu schaffen. <br>
+      Mehr lesen? Gehen Sie zur ,,Kontakt" Seite.</p>
+
+    <h2>Verteilung der Nutzendenmerkmale von ÖPNV-Apps</h2>
+
+    <p>
+      Die folgenden Diagramme bietet einen Überblick über wichtige demografische und Nutzungsmuster der Befragten.
+      Die Diagramme geben Einblicke in die Zusammensetzung der Teilnehmenden und zeigt, für welche diese die ÖPNV-Apps
+      nutzen.
+    </p>
+
+    <h3>Geschlechterverteilung der Befragten</h3>
+    <p>
+      Das unten stehende Diagramm zeigt die Verteilung der Geschlechter, die an der Umfrage teilgenommen haben.
+    </p>
+    <div class="index-chart">
+      <canvas id="gender"
+        aria-label="Horizontales Balkendigramm, welches die Anteile von weiblichen, männlichen und diversen Umfrageteilnehmern zeigt"
+        role="img">
+      </canvas>
+    </div>
+    <br>
+    <br>
+
+    <h3>Verteilung der Betriebssysteme, die die Befragten nutzen</h3>
+    <p>
+      Das Kreisdiagramm zeigt die Verteilung der Betriebssysteme der Umfrageteilnehmenden.
+    </p>
+    <div class="index-chart">
+      <canvas id="os"
+        aria-label="Horizontales Balkendigramm, welches die Anteile von weiblichen, männlichen und diversen Umfrageteilnehmern zeigt"
+        role="img"></canvas>
+    </div>
+    <br>
+    <br>
+
+    <h3>Verteilung der Nutzungszwecke von ÖPNV-Apps der Befragten</h3>
+    <p>
+      Dieses Diagramm zeigt auf, für welche Zwecke die Umfrageteilnehmenden die ÖPNV-Apps nutzen.
+    </p>
+    <div class="index-chart">
+      <canvas id="app-feature"
+        aria-label="Horizontales Balkendigramm, welches die Anteile von weiblichen, männlichen und diversen Umfrageteilnehmern zeigt"
+        role="img"></canvas>
+    </div>
+  </main>
+
+  <footer>
+    <p>©2025 Katharina Bente <br>Alle Rechte vorbehalten</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!--Java Script für Geschlechterverteilung horizontales Balkendiagramm-->
+  <script>
+    const ctx1 = document.getElementById('gender');
+
+    new Chart(ctx1, {
+      type: 'bar',
+      data: {
+        labels: ['Männlich', 'Weiblich', 'Divers'],
+        datasets: [{
+          data: [63, 32, 5],
+          backgroundColor: [
+            'rgb(168, 230, 163)',
+            'rgb(248, 197, 160)',
+            'rgb(198, 167, 210)'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: true,
+        // This chart will not respond to mousemove, etc
+        events: ['click'],
+        indexAxis: 'y',
+        scales: {
+          y: {
+            ticks: {
+              color: "white",
+              beginAtZero: true,
+              font: {
+                family: "'Atkinson Hyperlegible', sans-serif",
+                size: 16
+              }
+            },
+          },
+          x: {
+            ticks: {
+              color: "white",
+              beginAtZero: true,
+              font: {
+                family: "'Atkinson Hyperlegible', sans-serif",
+                size: 16
+              }
+            },
+          },
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+              callbacks: {
+                label: function (context) {
+                  const value = context.raw;  // Der Datenwert
+                  return `${value}% der Befragten.`;  // Benutzerdefinierter Text + Wert
+                }
+              }
+            }
+        }
+      }
+    });
+  </script>
+
+  <!--Java Script für Verteilung der Betriebssysteme Kreisdiagramm-->
+  <script>
+    const ctx2 = document.getElementById('os');
+
+    new Chart(ctx2, {
+      type: 'pie',
+      data: {
+        labels: ['Android', 'iOS'],
+        datasets: [{
+          data: [38, 62],
+          backgroundColor: [
+            'rgb(168, 230, 163)',
+            'rgb(248, 197, 160)'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: false,
+        // This chart will not respond to mousemove, etc
+        events: ['click'],
+        plugins: {
+          legend: {
+            display: true,
+            labels: {
+              color: 'rgb(255, 255, 255)',
+              font: {
+                family: "'Atkinson Hyperlegible', sans-serif",
+                size: 20
+              }
+
+            }
+          },
+          tooltip: {
+              callbacks: {
+                label: function (context) {
+                  const value = context.raw;  // Der Datenwert
+                  return `${value}% nutzen dies.`;  // Benutzerdefinierter Text + Wert
+                }
+              }
+            }
+        }
+      }
+    });
+
+    
+    resize();
+  </script>
+
+  <!--Java Script für ÖPNV-Zwecke Balkendiagramm-->
+  <script>
+    const ctx3 = document.getElementById('app-feature');
+
+    new Chart(ctx3, {
+      type: 'bar',
+      data: {
+        labels: ['Routenplanung und Navigation', 'Echtzeitinformationen', 'Ticketkauf', 'Aboverwaltung', 'Informationen zu Haltestellen', 'Netz- und Tarifpläne'],
+        datasets: [{
+          data: [29, 30, 11, 3, 19, 8],
+          backgroundColor: [
+            'rgb(168, 230, 163)',
+            'rgb(248, 197, 160)',
+            'rgb(198, 167, 210)',
+            'rgb(188, 206, 217)',
+            'rgb(184, 173, 160)',
+            'rgb(217, 199, 199)'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: true, // Beibehaltung des Seitenverhältnisses
+       // indexAxis: 'y',
+        // This chart will not respond to mousemove, etc
+        events: ['click'],
+        scales: {
+          y: {
+            ticks: {
+              color: "white",
+              beginAtZero: true,
+              font: {
+                family: "'Atkinson Hyperlegible', sans-serif",
+                size: 16
+              }
+            },
+          },
+          x: {
+            display: false,
+          },
+        },
+          plugins: {
+          legend: {
+            display: true,
+            position: 'top',
+            labels: {
+              font: {
+                size: 16,
+                family: "'Atkinson Hyperlegible', sans-serif"
+              },
+              color: 'white', // Textfarbe der Legende
+              generateLabels: function (chart) {
+                return chart.data.labels.map((label, index) => ({
+                  text: label, // Nutze den vollständigen Text
+                  fillStyle: chart.data.datasets[0].backgroundColor[index],
+                  fontColor: 'white' // Setzt die Textfarbe hier explizit
+                }));
+              }
+            }
+          },
+          tooltip: {
+              callbacks: {
+                label: function (context) {
+                  const value = context.raw;  // Der Datenwert
+                  return `${value}% nutzen dies.`;  // Benutzerdefinierter Text + Wert
+                }
+              }
+            }
+          } 
+      }
+    });
+  </script>
+</body>
+
 </html>
