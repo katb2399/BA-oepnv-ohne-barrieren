@@ -12,15 +12,17 @@
     <body>
         <header>
             <nav id="main-nav">
-                <img id="icon-pic" src="images/icon.png" alt="Ein Icon bestehend aus einem Kreis, wo in der Mitte ein Mensch ist."/>
-                <ul>
+                <button id="burger-menu" aria-label="Toggle navigation">
+                  ☰
+              </button>
+                  <ul id="nav-links">
                     <li><a href="index.html">Startseite</a></li>
                     <li><a href="app-bewertungen.html">App-Bewertungen</a></li>
                     <li><a href="feedback.html">Feedback geben</a></li>
                     <li><a class="active" href="kontakt.html">Über Uns</a></li>
-                    </ul>	
+                  </ul>
             </nav>
-        </header>
+          </header>
         <main>
             <div id="hero-picture">
                 <img id="hero-pic" src="images/hero_kontakt.jpg" alt="Das Interieur und ein Stoppbutton in einem Bus."/>
@@ -56,9 +58,36 @@
                 Google fragen!
             </p>
 
+            <h2>Quellenangabe Appinformationen</h2>
+            <p>
+                Transparenz ist wichtig, genauso wie seine Quellen zu nennen. Daher sind folgend alle Quellen aufgelistet, aus der die Informationen zu den einzelnen ÖPNV-Apps bezogen wurden.
+                <ul>
+                    <li>BVG Fahrinfo: https://www.bvg.de/de/abos-und-tickets/alle-apps/fahrinfo-app?</li>
+                    <li>DB Navigator: https://www.bahn.de/service/mobile/db-navigator</li>
+                    <li>Fahrplaner: https://www.vbn.de/service/fahrplaner-app?</li>
+                    <li>hvv App: https://www.hvv.de/de/app</li>
+                    <li>mobil.nrw: https://www.mobil.nrw/fahrplanauskunft.html?</li>
+                    <li>NAH SH: https://www.nah.sh/de/fahrplan/die-nah-sh-app/?</li>
+                    <li>Öffi Fahrplanauskunft: https://oeffi.schildbach.de/index_de.html</li>
+                </ul>
+            </p>
+            
+
+
         </main>
         <footer>
                 <p>©2025 Katharina Bente <br>Alle Rechte vorbehalten</p>
         </footer>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+            const burgerMenu = document.getElementById("burger-menu");
+            const navLinks = document.getElementById("nav-links");
+        
+            burgerMenu.addEventListener("click", () => {
+                navLinks.classList.toggle("menu-open"); // Navigation ein-/ausblenden
+            });
+        });
+          </script>
     </body>
 </html>

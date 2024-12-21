@@ -11,15 +11,17 @@
   </head>
   <body>
     <header>
-        <nav id="main-nav">
-          <img id="icon-pic" src="images/icon.png" alt="Ein Icon bestehend aus einem Kreis, wo in der Mitte ein Mensch ist."/>
-          <ul>
+      <nav id="main-nav">
+          <button id="burger-menu" aria-label="Toggle navigation">
+            ☰
+        </button>
+            <ul id="nav-links">
               <li><a href="index.html">Startseite</a></li>
               <li><a href="app-bewertungen.html">App-Bewertungen</a></li>
               <li><a class="active" href="feedback.html">Feedback geben</a></li>
               <li><a href="kontakt.html">Über Uns</a></li>
-          </ul>	
-        </nav>
+            </ul>
+      </nav>
     </header>
     <main>
       <div id="hero-picture">
@@ -43,5 +45,16 @@
       <footer>
   			<p>©2025 Katharina Bente <br>Alle Rechte vorbehalten</p>
 		</footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+      const burgerMenu = document.getElementById("burger-menu");
+      const navLinks = document.getElementById("nav-links");
+  
+      burgerMenu.addEventListener("click", () => {
+          navLinks.classList.toggle("menu-open"); // Navigation ein-/ausblenden
+      });
+  });
+    </script>
   </body>
 </html>

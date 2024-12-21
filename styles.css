@@ -5,13 +5,15 @@ body {
     margin: 1%;
     padding: 0;
     font-family: "Atkinson Hyperlegible", sans-serif;
-    font-size: 1rem;
+    font-size: 100%;
     background-color: #1C1C1C;
     color: white;
+    max-width: 100%;
+    word-wrap: break-word;
 }
 
 #icon-pic {
-    width: 4%;
+    width: 4rem;
     float: left;
 }
 
@@ -33,46 +35,94 @@ h4 {
     font-size: 1.25rem;
 }
 
+/* Allgemeine Navigation */
 #main-nav {
     background-color: #1C1C1C;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+    background-color: #1C1C1C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
-
-nav ul {
-    margin-top: 10px;
+/* Navigationselemente */
+#nav-links {
     list-style: none;
-    text-align: right;
-}
-
-nav li {
-    display: inline-block;
     margin: 10px 20px 10px 20px;
     font-size: 1.25rem;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
 }
 
-nav a {
+/* Links */
+#nav-links li a {
     text-decoration: none;
     color: white;
     padding: 24px 24px;
 }
 
-nav a:hover, .active {
+/* Burger-Menü */
+#burger-menu {
+    display: none; /* Standardmäßig unsichtbar */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Für mobile Geräte */
+@media (max-width: 768px) {
+    #burger-menu {
+        display: block; /* Burger-Menü nur auf mobilen Geräten sichtbar */
+        color: white;
+    }
+
+    #nav-links {
+        display: none; /* Navigation standardmäßig versteckt */
+        flex-direction: column;
+        background-color: #1C1C1C;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+     /* Wenn das Menü geöffnet ist */
+     #nav-links.menu-open {
+        display: flex; /* Menü einblenden */
+    }
+}
+
+#nav-links li a:hover {
     text-decoration: underline;
     text-decoration-thickness: 0.5rem;
     text-decoration-color: #B6CEDD;
 }
 
-nav a:focus {
+#nav-links li a.active {
+    text-decoration: underline;
+    text-decoration-thickness: 0.5rem;
+    text-decoration-color: #B6CEDD;
+}
+
+#nav-links li a:focus {
     outline: 0.5rem solid #B6CEDD;
     border-radius: 0.5rem;
+  }
+
+  main {
+    margin-top: 6rem;
   }
 
 #hero-picture {
     display: flex;
     justify-content: center;
-    margin-top: 5rem; 
   }
 
 #hero-pic {
