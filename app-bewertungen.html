@@ -238,6 +238,29 @@
 
     <!--Java Script für BVG Bewertungen horizontales Balkendiagramm-->
     <script>
+// Plugin für Barrierefreiheit
+const accessibilityPlugin = {
+    id: 'accessibility',
+    afterRender(chart) {
+        const canvas = chart.canvas;
+        const datasets = chart.data.datasets;
+        const labels = chart.data.labels;
+
+        // Beschreibung für Screenreader generieren
+        let description = 'Dieses Balkendiagramm zeigt folgende Bewertungen: ';
+        datasets.forEach((dataset, datasetIndex) => {
+            dataset.data.forEach((value, dataIndex) => {
+                const label = labels[dataIndex];
+                description += `${label}: ${value} von 5 Sternen. `;
+            });
+        });
+
+        // Setze das Aria-Label auf dem Canvas-Element
+        canvas.setAttribute('aria-label', description);
+        canvas.setAttribute('role', 'img'); // Optional: Rolle als Bild definieren
+    }
+};
+
         // Plugin registrieren
         Chart.register(ChartDataLabels);
         const ctx1 = document.getElementById('bvg');
@@ -295,6 +318,7 @@
                     },
                 },
                 plugins: {
+                    
                     legend: {
                         display: false
                     },
@@ -322,9 +346,10 @@
                             weight: 'bold'
                         },
                         formatter: (value) => `${value} von 5 Sternen` // Optional: Formatierung des Werts
-                    }
+                    },
                 }
-            }
+            },
+            plugins: [accessibilityPlugin] // Plugin aktivieren
         });
     </script>
 
