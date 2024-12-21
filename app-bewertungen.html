@@ -17,16 +17,16 @@
     <header>
         <nav id="main-nav">
             <button id="burger-menu" aria-label="Toggle navigation">
-              ☰
-          </button>
-              <ul id="nav-links">
+                ☰
+            </button>
+            <ul id="nav-links">
                 <li><a href="index.html">Startseite</a></li>
                 <li><a class="active" href="app-bewertungen.html">App-Bewertungen</a></li>
                 <li><a href="feedback.html">Feedback geben</a></li>
                 <li><a href="kontakt.html">Über Uns</a></li>
-              </ul>
+            </ul>
         </nav>
-      </header>
+    </header>
     <main>
         <div id="hero-picture">
             <img id="hero-pic" src="images/hero_bewertungen.jpg"
@@ -46,13 +46,13 @@
 
         <!--Beginn des Akkordeon Inhaltes-->
         <section class="accordion">
-            <button type="button" class="collapsible">
-                <h2>BVG Fahrinfo
-                    <div class="chevron"></div>
-                </h2>
+            <button type="button" class="collapsible" aria-expanded="false" aria-controls="content-bvg">
+                <span class="button-heading">BVG Fahrinfo</span>
+                <span class="chevron" aria-hidden="true"></span>
             </button>
 
-            <div class="content">
+            <div id="content-bvg" class="content">
+                <h3>Informationen und Bewertungen zur App BVG Fahrinfo</h3>
                 <p><span class="underline">Herausgeber:</span> Berliner Verkehrsbetriebe (BVG)</p>
                 <p><span class="underline">Geltungsbereich:</span> Berlin und Berliner Umland </p>
                 <p><span class="underline">Betriebssystem:</span> Android und iOS</p>
@@ -73,12 +73,13 @@
 
             </div>
 
-            <button type="button" class="collapsible">
-                <h2>DB Navigator
-                    <div class="chevron"></div>
-                </h2>
+            <button type="button" class="collapsible" aria-expanded="false" aria-controls="content-db">
+                <span class="button-heading">DB Navigator</span>
+                <span class="chevron" aria-hidden="true"></span>
             </button>
-            <div class="content">
+
+            <div id="content-db" class="content">
+                <h3>Informationen und Bewertungen zur App DB Navigator</h3>
                 <p><span class="underline">Herausgeber:</span> Deutsche Bahn AG</p>
                 <p><span class="underline">Geltungsbereich:</span> Deutschlandweit und International </p>
                 <p><span class="underline">Betriebssystem:</span> Android und iOS</p>
@@ -99,19 +100,22 @@
                 </div>
             </div>
 
-            <button type="button" class="collapsible">
-                <h2>FahrPlaner
-                    <div class="chevron"></div>
-                </h2>
+            <button type="button" class="collapsible" aria-expanded="false" aria-controls="content-fahrplaner">
+                <span class="button-heading">FahrPlaner</span>
+                <span class="chevron" aria-hidden="true"></span>
             </button>
-            <div class="content">
+
+            <div id="content-fahrplaner" class="content">
+                <h3>Informationen und Bewertungen zur App FahrPlaner</h3>
                 <p><span class="underline">Herausgeber:</span> Verkehrsverbund Bremen/Niedersachsen (VBN)</p>
-                <p><span class="underline">Geltungsbereich:</span> Bremen, Niedersachen, Hamburg, Rostock, deutschlandweiter Zugverkehr</p>
+                <p><span class="underline">Geltungsbereich:</span> Bremen, Niedersachen, Hamburg, Rostock,
+                    deutschlandweiter Zugverkehr</p>
                 <p><span class="underline">Betriebssystem:</span> Android und iOS</p>
                 <p><span class="underline">Beschreibung:</span><br>
-                Die App <strong>FahrPlaner</strong> ermöglicht es, nach Verbindungen in den Gebieten Bremen, Niedersachen, Hamburg und Rostock zu suchen. 
-                Neben de rRoutenplanung sind auch Services wie Carsharing, Bikesharing un Taxi integriert. 
-                Über die App können auch direkt Tickets gekauft werden. 
+                    Die App <strong>FahrPlaner</strong> ermöglicht es, nach Verbindungen in den Gebieten Bremen,
+                    Niedersachen, Hamburg und Rostock zu suchen.
+                    Neben de rRoutenplanung sind auch Services wie Carsharing, Bikesharing un Taxi integriert.
+                    Über die App können auch direkt Tickets gekauft werden.
                 </p>
                 <p><span class="underline">Durchschnittliche Bewertung der Nutzerfreundlichkeit und
                         Barrierefreiheit:</span> 3,44 von 5 Sternen</p>
@@ -123,18 +127,20 @@
                 </div>
             </div>
 
-            <button type="button" class="collapsible">
-                <h2>hvv App
-                    <div class="chevron"></div>
-                </h2>
+            <button type="button" class="collapsible" aria-expanded="false" aria-controls="content-hvv">
+                <span class="button-heading">hvv App</span>
+                <span class="chevron" aria-hidden="true"></span>
             </button>
-            <div class="content">
+
+            <div id="content-hvv" class="content">
+                <h3>Informationen und Bewertungen zur hvv App</h3>
                 <p><span class="underline">Herausgeber:</span> Hamburger Verkehrsbund (HVV)</p>
                 <p><span class="underline">Geltungsbereich:</span> Hamburg und Hamburger Umland </p>
                 <p><span class="underline">Betriebssystem:</span> Android und iOS</p>
                 <p><span class="underline">Beschreibung:</span><br>
-                Die <strong>hvv App</strong> bietet die Möglichkeit, nach Verbindungen zu suchen und direkt über die App Tickets für die ausgewählte Fahrt zu kaufen.
-                Zudem bietet die App eine Übersicht von Abfährten in der Nähe des Standortes.
+                    Die <strong>hvv App</strong> bietet die Möglichkeit, nach Verbindungen zu suchen und direkt über die
+                    App Tickets für die ausgewählte Fahrt zu kaufen.
+                    Zudem bietet die App eine Übersicht von Abfährten in der Nähe des Standortes.
                 </p>
                 <p><span class="underline">Durchschnittliche Bewertung der Nutzerfreundlichkeit und
                         Barrierefreiheit:</span> 3,23 von 5 Sternen</p>
@@ -146,18 +152,20 @@
                 </div>
             </div>
 
-            <button type="button" class="collapsible">
-                <h2>mobil.nrw
-                    <div class="chevron"></div>
-                </h2>
+            <button type="button" class="collapsible" aria-expanded="false" aria-controls="content-mobilnrw">
+                <span class="button-heading">mobil.nrw</span>
+                <span class="chevron" aria-hidden="true"></span>
             </button>
-            <div class="content">
+
+            <div id="content-mobilnrw" class="content">
+                <h3>Informationen und Bewertungen zur App mobil.nrw</h3>
                 <p><span class="underline">Herausgeber:</span> NRW-Ministerium für Umwelt, Naturschutz und Verkehr</p>
                 <p><span class="underline">Geltungsbereich:</span> Nordrhein-Westfalen </p>
                 <p><span class="underline">Betriebssystem:</span> Android und iOS</p>
                 <p><span class="underline">Beschreibung:</span><br>
-                Die <strong>mobil.nrw</strong> App bietet Fahrplanauskünfte und Ticketkauf für den öffentlichen nahverkehr in Nordrhein-Westfalen. 
-                Außerdem gibt es in der App die Möglichkeit, Echtzeitinformationen zu erhalten.
+                    Die <strong>mobil.nrw</strong> App bietet Fahrplanauskünfte und Ticketkauf für den öffentlichen
+                    nahverkehr in Nordrhein-Westfalen.
+                    Außerdem gibt es in der App die Möglichkeit, Echtzeitinformationen zu erhalten.
                 </p>
                 <p><span class="underline">Durchschnittliche Bewertung der Nutzerfreundlichkeit und
                         Barrierefreiheit:</span> 2,18 von 5 Sternen</p>
@@ -169,18 +177,20 @@
                 </div>
             </div>
 
-            <button type="button" class="collapsible">
-                <h2>NAH SH
-                    <div class="chevron"></div>
-                </h2>
+            <button type="button" class="collapsible" aria-expanded="false" aria-controls="content-nahsh">
+                <span class="button-heading">NAH SH</span>
+                <span class="chevron" aria-hidden="true"></span>
             </button>
-            <div class="content">
+
+            <div id="content-nahsh" class="content">
+                <h3>Informationen und Bewertungen zur App NAH SH</h3>
                 <p><span class="underline">Herausgeber:</span> NAH.SH GmbH</p>
                 <p><span class="underline">Geltungsbereich:</span> Schleswig-Holstein</p>
                 <p><span class="underline">Betriebssystem:</span> Android und iOS</p>
                 <p><span class="underline">Beschreibung:</span><br>
-                In der App <strong>NAH SH</strong> kann nach Verbindungen gesucht werden und beliebige Tickets gekauft werden.
-                Über eine Haltestellenübersicht kann sich zudem über Ankunfts- und Abfahrtszeiten informiert werden.
+                    In der App <strong>NAH SH</strong> kann nach Verbindungen gesucht werden und beliebige Tickets
+                    gekauft werden.
+                    Über eine Haltestellenübersicht kann sich zudem über Ankunfts- und Abfahrtszeiten informiert werden.
                 </p>
                 <p><span class="underline">Durchschnittliche Bewertung der Nutzerfreundlichkeit und
                         Barrierefreiheit:</span> 4 von 5 Sternen</p>
@@ -192,19 +202,21 @@
                 </div>
             </div>
 
-            <button type="button" class="collapsible">
-                <h2>Öffi - Fahrplanauskunft
-                    <div class="chevron"></div>
-                </h2>
+            <button type="button" class="collapsible" aria-expanded="false" aria-controls="content-oeffi">
+                <span class="button-heading">Öffi - Fahrplanauskunft</span>
+                <span class="chevron" aria-hidden="true"></span>
             </button>
-            <div class="content">
+
+            <div id="content-oeffi" class="content">
+                <h3>Informationen und Bewertungen zur App Öffi - Fahrplanauskunft</h3>
                 <p><span class="underline">Herausgeber:</span> Schildbach Software</p>
                 <p><span class="underline">Geltungsbereich:</span> Deutschlandweit und International</p>
                 <p><span class="underline">Betriebssystem:</span> Android</p>
                 <p><span class="underline">Beschreibung:</span><br>
-                Die App <strong>Öffi Fahrplanauskunft</strong> ist eine App für Android, in der sich über Verbindungen und Echtzeitinformationen zu Abfahrten informiert werden kann.
-                Zudem werden interaktive Netzpläne angeboten.
-                Das ganze ist für ganz Deutschland sowie das Ausland möglich.
+                    Die App <strong>Öffi Fahrplanauskunft</strong> ist eine App für Android, in der sich über
+                    Verbindungen und Echtzeitinformationen zu Abfahrten informiert werden kann.
+                    Zudem werden interaktive Netzpläne angeboten.
+                    Das ganze ist für ganz Deutschland sowie das Ausland möglich.
                 </p>
                 <p><span class="underline">Durchschnittliche Bewertung der Nutzerfreundlichkeit und
                         Barrierefreiheit:</span> 3,76 von 5 Sternen</p>
@@ -860,14 +872,14 @@
     </script>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-        const burgerMenu = document.getElementById("burger-menu");
-        const navLinks = document.getElementById("nav-links");
-    
-        burgerMenu.addEventListener("click", () => {
-            navLinks.classList.toggle("menu-open"); // Navigation ein-/ausblenden
+            const burgerMenu = document.getElementById("burger-menu");
+            const navLinks = document.getElementById("nav-links");
+
+            burgerMenu.addEventListener("click", () => {
+                navLinks.classList.toggle("menu-open"); // Navigation ein-/ausblenden
+            });
         });
-    });
-      </script>
+    </script>
 
 </body>
 
