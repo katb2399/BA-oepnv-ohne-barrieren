@@ -26,7 +26,7 @@
             <li><a class="active" href="index.html">Startseite</a></li>
             <li><a href="app-bewertungen.html">App-Bewertungen</a></li>
             <li><a href="feedback.html">Feedback geben</a></li>
-            <li><a href="kontakt.html">Über Uns</a></li>
+            <li><a href="kontakt.html">Über uns</a></li>
           </ul>
     </nav>
   </header>
@@ -58,7 +58,7 @@
       Im Fokus der Bewertungen liegen die Funktionen: Fahrtauskunft, Buchungsprozess von Tickets, Echtzeitinformationen
       zu Fahrten und der Appseitigen Navigation zu Haltestellen.
       Die Bewertungen finden Sie auf der Seite <a class="text-link"
-        href="app-bewertungen.html"><strong>Bewertungen</strong></a> .
+        href="app-bewertungen.html"><strong>App-Bewertungen</strong></a> .
       Falls Sie selber eine Bewertung zu einer App abgeben möchten, finden sie die Online Umfrage auf der Seite <a
         class="text-link" href="feedback.html"><strong>Feedback geben</strong></a> .
       Danke im Voraus für Ihr Feedback und Ihre Mühe.
@@ -74,7 +74,8 @@
       Wenn Sie auf Probleme stoßen oder Verbesserungsvorschläge haben, kontaktieren Sie mich bitte, damit wir diese
       Seite kontinuierlich verbessert werden kann.
       Das Ziel ist es, eine inklusive Plattform für alle Nutzenden zu schaffen. <br>
-      Mehr lesen? Gehen Sie zur ,,Kontakt" Seite.</p>
+      Mehr lesen? Gehen Sie zur <a class="text-link"
+      href="kontakt.html"><strong>Über uns</strong></a> Seite.</p>
 
     <h2>Verteilung der Nutzendenmerkmale von ÖPNV-Apps</h2>
 
@@ -150,6 +151,7 @@
       },
       options: {
         responsive: true,
+        events: ['click'],
         indexAxis: 'y',
         scales: {
           y: {
@@ -224,6 +226,7 @@
       },
       options: {
         responsive: false,
+        events: ['click'],
         plugins: {
           legend: {
             display: true,
@@ -289,7 +292,7 @@
       },
       options: {
         responsive: true, // Beibehaltung des Seitenverhältnisses
-        // indexAxis: 'y',
+        events: ['click'],
         scales: {
           y: {
             ticks: {
